@@ -7,7 +7,7 @@ RUN \
     yum -y install httpd php php-cli php-common \
     php-mcrypt php-gd php-curl php-mysql php-ldap \
     php-zip php-fileinfo php-fpm php-mysqlnd \
-    php-devel php-mbstringh php-curl php-xml php-pear php-bcmath php-json\
+    php-devel php-mbstring php-curl php-xml php-pear php-bcmath php-json\
     wget unzip
 VOLUME /var/www/html
 WORKDIR /var/www/html
