@@ -9,10 +9,10 @@ services:
             - ./db-data:/var/lib/mysql
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: 123456
-            MYSQL_DATABASE: deathnote_db
-            MYSQL_USER: laravel
-            MYSQL_PASSWORD: laravel1234
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
         networks:
             - net-deathnote
     web:
