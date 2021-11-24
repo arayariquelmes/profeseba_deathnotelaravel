@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/profeseba', function () {
-    return "Hola desde profe seba";
-});
+Route::view("/agregar_causa","agregar_causa")->name("agregar_causa");
+Route::view("/ver_causas","ver_causas")->name("ver_causas");
+Route::view("/asesinar","asesinar")->name("asesinar");
+Route::view("/revisar_libreta","revisar_libreta")->name("revisar_libreta");
